@@ -1,13 +1,17 @@
 import Link from 'next/link';
 
-export default function Alphabet() {
+function Alphabet() {
   return (
     <>
-    <h1>Alphabet Page</h1>
+      <Link href={'/alphabet/consonants'}>Consonants</Link><br></br>
+      <Link href={'/alphabet/vowels'}>Vowels</Link><br></br>
+      <Link href={'/alphabet/diphthongs'}>Diphthongs</Link><br></br>
+      <Link href={'/alphabet/tones'}>Tones</Link>
 
-    <Link href={'/consonants'}>Consonants</Link>
-    <Link href={'/vowels'}>Vowels</Link>
-    {/* <Link href={'/other'}>Other</Link> */}
+
+      {/* <Link href={'/other'}>Other</Link> */}
     </>
   )
 }
+
+export default Alphabet;

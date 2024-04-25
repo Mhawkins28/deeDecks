@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Phrases() {
+function Phrases() {
   return (
     <>
     <h1>Phrases Page</h1>
@@ -10,3 +10,5 @@ export default function Phrases() {
     </>
   )
 }
+
+export default Phrases;
